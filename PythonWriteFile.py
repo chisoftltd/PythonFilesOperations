@@ -37,3 +37,15 @@ else:
 
 f = open("myfile4.txt", "x")
 f = open("myfile5.txt", "w")
+
+# The mkdir() Method
+os.mkdir("myfiles")
+
+# The getcwd() Method()
+os.getcwd()
+
+# The chdir() Method
+# os.chdir("C:/data")
+
+# The rmdir() Method
+os.rmdir("myfiles")
