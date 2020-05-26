@@ -1,4 +1,5 @@
 # Write to an Existing File
+import os
 
 f = open("demofile2.txt", "a")
 f.write("Now the file has more content! TXT files are useful for storing information in plain text with no special formatting beyond basic fonts and font styles.")
@@ -26,5 +27,13 @@ f = open("demofile.txt", "r")
 print(f.read())
 
 # Create a New File
+
+if os.path.exists("myfile5.txt") or os.path.exists("myfile4.txt"):
+    os.remove("myfile4.txt")
+    os.remove("myfile5.txt")
+else:
+  print("The file does not exist")
+
+
 f = open("myfile4.txt", "x")
 f = open("myfile5.txt", "w")
